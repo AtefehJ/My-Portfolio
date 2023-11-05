@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="index.js"></script>
+
+    <title>Atefeh | Portfolio</title>
+  </head>
+  <body>
+    <header class="clearfix">
+      <nav class="main-navbar">
+        <div class="logo">
+          <div class="logo-shape">
+            <p class="logo-text">P</p>
+          </div>
+          <div class="logo-shape">
+            <p class="logo-text">O</p>
+          </div>
+          <div class="logo-shape">
+            <p class="logo-text">R</p>
+          </div>
+          <div class="logo-shape">
+            <p class="logo-text">T</p>
+          </div>
+          <div class="logo-shape">
+            <p class="logo-text">F</p>
+          </div>
+          <div class="logo-shape">
+            <p class="logo-text">O</p>
+          </div>
+          <div class="logo-shape">
+            <p class="logo-text">L</p>
+          </div>
+          <div class="logo-shape">
+            <p class="logo-text">I</p>
+          </div>
+          <div class="logo-shape">
+            <p class="logo-text">O</p>
+          </div>
+        </div>
+
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link home" href="#">Home</a></li>
+          <li><a class="main-nav-link" href="#about">About</a></li>
+          <li><a class="main-nav-link" href="#projects">Projects</a></li>
+          <li><a class="main-nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="btn-mobile-navigation">
+          <i class="fa-solid fa-xmark icon-mobile-nav" name="close"></i>
+          <i class="fa-solid fa-bars icon-mobile-nav" name="menue"></i>
+        </button>
+      </nav>
+
+      <!--------------------Home Section--------------------->
+      <div class="intro-section">
+        <div class="myInfo">
+          <figure class="myInfo-shape">
+            <img
+              class="myInfo-img"
+              src="public/images/myPic.jpg"
+              alt="my photo"
+            />
+          </figure>
+        </div>
+
+        <div class="home-section">
+          <h1>Atefeh Javadnia</h1>
+          <h3>Frontend Developer</h3>
+
+          <p>
+            Passionate Frontend Developer with over 3 years of experience in
+            planning, designing, developing user interfaces, testing and
+            debugging multiple websites and web-based applications incorporating
+            a range of technologies.
+          </p>
+          <a href="public/images/Atefeh-CV.pdf" download class="btn">
+            &darr; Download CV</a
+          >
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--------------------About Section--------------------->
+      <section class="about-section" id="about">
+        <div>
+          <h2>About Me</h2>
+
+          <p class="about-description">
+            Dedicated Frontend Developer with over three years of experience in
+            planning, designing and developing user interfaces for web
+            applications. Successfully completed projects that showcase skills
+            and a general background in software development. Adept at building
+            responsive landing pages, collecting and validating user data, and
+            collaborating with cross-functional teams for scalable product
+            development. Demonstrated ability to ensure product quality through
+            participation in QA meetings. Known for attention to detail, self-
+            motivation, and a strong work ethic.
+          </p>
+        </div>
+
+        <div class="about-titles">
+          <p class="about-title-link active-title" onclick="opentab('skills')">
+            Skills
+          </p>
+          <p class="about-title-link" onclick="opentab('experience')">
+            Experience
+          </p>
+          <p class="about-title-link" onclick="opentab('education')">
+            Education
+          </p>
+        </div>
+
+        <div class="about-content active-content" id="skills">
+          <ul>
+            <li>
+              <span>Programming languages</span><br />
+              HTML5, CSS3 (Flexbox, Grid), JavaScript, DOM manipulation
+            </li>
+            <li>
+              <span>JavaScript Libraries/Frameworks</span>
+              <br />
+              React.js (JSX, Hooks)
+            </li>
+            <li>
+              <span>Web Technologies</span><br />
+              RESTful APIs, JSON, HTTP, Webpack, NPM, Responsive Web Design
+            </li>
+
+            <li>
+              <span>JavaScript Runtime Environment</span><br />
+              Node.js, Express.js
+            </li>
+
+            <li>
+              <span>Front-End Framework</span><br />
+              Bootstrap
+            </li>
+
+            <li>
+              <span>Content Management System</span><br />
+              WordPress (Themes and Plugins)
+            </li>
+
+            <li>
+              <span>Development Tools & IDE</span><br />
+              Visual Studio Code, Brackets, Chrome DevTools, Postman
+            </li>
+
+            <li>
+              <span>Version Control System</span><br />
+              Github, Git
+            </li>
+          </ul>
+        </div>
+
+        <div class="about-content" id="experience">
+          <ul>
+            <li>
+              <span>December 2019 – February 2020</span><br />
+              Data Production Consultant at Outward, Inc.
+            </li>
+
+            <li>
+              <span>January 2017 – January 2018</span><br />
+              Web Developer Associate at B&B Engineering and Telecommunications
+            </li>
+
+            <li>
+              <span>June 2016 – December 2016</span><br />
+              Software Engineer Associate at IT Management Corporation
+            </li>
+
+            <li>
+              <span> January 2015 – December 2015</span><br />Media Intern at
+              International Technological University (ITU)
+            </li>
+          </ul>
+        </div>
+        <div class="about-content" id="education">
+          <ul>
+            <li>
+              <span> January 2014 – January 2016</span><br />
+              Master of Science in Software Engineering from International
+              Technological University (ITU)
+            </li>
+
+            <li>
+              <span> September 2006 – June 2011</span><br />
+              Bachelor of Science in Information Technology from Sharif
+              University of Technology (SUT)
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--------------------Projects Section--------------------->
+      <section class="project-section" id="projects">
+        <div class="project-heading">
+          <h2>My Projects</h2>
+        </div>
+
+        <div class="project-container">
+          <div class="project-1">
+            <div class="card">
+              <div class="card-image-content">
+                <div class="card-image">
+                  <a
+                    href="https://atefehj.github.io/My-Recent-Project/"
+                    target="_blank"
+                  >
+                    <img
+                      src="public/images/Project-1.png"
+                      alt="picture of the first project"
+                    />
+                  </a>
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4>Food Website</h4>
+                <p class="description">Utilized HTML5/CSS3, jQuery</p>
+                <a
+                  class="btn-link"
+                  href="https://atefehj.github.io/My-Recent-Project/"
+                  target="_blank"
+                  >View</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-2">
+            <div class="card">
+              <div class="card-image-content">
+                <div class="card-image">
+                  <a
+                    href="https://sordid-fascinated-catsup.glitch.me/"
+                    target="_blank"
+                  >
+                    <img
+                      src="public/images/Project-2.png"
+                      alt="picture of the second project"
+                    />
+                  </a>
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4>Weather Forecast App</h4>
+                <p class="description">Utilized JS, EJS, Node.JS, Web API</p>
+
+                <a
+                  class="btn-link"
+                  href="https://sordid-fascinated-catsup.glitch.me/"
+                  target="_blank"
+                  >View</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-3">
+            <div class="card">
+              <div class="card-image-content">
+                <div class="card-image">
+                  <a
+                    href="https://atefehj.github.io/burger-builder-project/"
+                    target="_blank"
+                  >
+                    <img
+                      src="public/images/Project-3.png"
+                      alt="picture of the third project"
+                    />
+                  </a>
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4>Burger Builder App</h4>
+                <p class="description">Utilized HTML5/CSS3, JS, React</p>
+                <a
+                  class="btn-link"
+                  href="https://atefehj.github.io/burger-builder-project/"
+                  target="_blank"
+                  >View</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-4">
+            <div class="card">
+              <div class="card-image-content">
+                <div class="card-image">
+                  <a href="https://atefehj.github.io/Guess/" target="_blank">
+                    <img
+                      src="public/images/Project-4.png"
+                      alt="picture of the second project"
+                    />
+                  </a>
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4>Guessing Number App</h4>
+                <p class="description">Utilized HTML/CSS, JS, DOM</p>
+
+                <a
+                  class="btn-link"
+                  href="https://atefehj.github.io/Guess/"
+                  target="_blank"
+                  >View</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-5">
+            <div class="card">
+              <div class="card-image-content">
+                <!-- <span class="overlay"></span> -->
+                <div class="card-image">
+                  <a
+                    href="https://atefehj.github.io/My-Game-Application/"
+                    target="_blank"
+                  >
+                    <img
+                      src="public/images/Project-5.png"
+                      alt="picture of the second project"
+                    />
+                  </a>
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4>Pig-Dice Game App</h4>
+                <p class="description">Utilized HTML5/CSS3, JS, DOM</p>
+
+                <a
+                  class="btn-link"
+                  href="https://atefehj.github.io/My-Game-Application/"
+                  target="_blank"
+                  >View</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-6">
+            <div class="card">
+              <div class="card-image-content">
+                <!-- <span class="overlay"></span> -->
+                <div class="card-image">
+                  <a href="https://atefehj.github.io/starter/" target="_blank">
+                    <img
+                      src="public/images/Project-6.png"
+                      alt="picture of the second project"
+                    />
+                  </a>
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4>Tour Website</h4>
+                <p class="description">Utilized HTML5/CSS3 and SCSS</p>
+
+                <a
+                  class="btn-link"
+                  href="https://atefehj.github.io/starter/"
+                  target="_blank"
+                  >View</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--------------------Contact Section--------------------->
+      <section class="contact-section" id="contact">
+        <div class="contact">
+          <div class="contact-Info">
+            <h2>Contact Me</h2>
+            <div class="social-icons">
+              <p>
+                <i class="fa-sharp fa-solid fa-location-dot"></i>SF Bay Area,
+                California
+              </p>
+              <p>
+                <a href="mailto:Atefe.Javadnia@gmail.com">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>Atefe.Javadnia@gmail.com</span>
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://www.linkedin.com/in/atefeh-javadnia/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/AtefehJ" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+          <div class="contact-form">
+            <p>
+              Please fill out the form below to discuss for work opportunities:
+            </p>
+            <form name="submit-to-google-sheet">
+              <input type="text" name="name" placeholder="Full Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="7"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn-submit">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!------------------- Footer ------------------->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-services">
+          <p>Services</p>
+          <p><i class="fa-solid fa-file-lines"></i>Front End Development</p>
+          <p><i class="fa-solid fa-file-code"></i>Web Development</p>
+        </div>
+
+        <div class="footer-name">
+          <p>Follow Me</p>
+          <ul class="footer-icons-links">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/atefeh-javadnia/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/AtefehJ" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-location">
+          <p class="addrss">Address</p>
+          <address>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>SF Bay Area, California
+            </p>
+            <p>
+              <a href="mailto:Atefe.Javadnia@gmail.com"
+                ><i class="fa-solid fa-envelope my-email"> </i
+                >Atefe.Javadnia@gmail.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <div class="footer-copyright">
+          <p>
+            Copyright &copy; <span class="current-date"></span> by Atefeh
+            Javadnia. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,626 @@
+:root {
+  --primary-color: #f4e3d3;
+  --primary-text-color: #6b238f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 90%;
+  /****** It's not working on some Safari versions ******/
+  /* scroll-behavior: smooth; */
+  /** Mobile Menue inside media query**/
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+  background-color: var(--primary-color);
+  color: #333;
+  line-height: 1.6;
+  /** Mobile Menue inside media query**/
+  overflow-x: hidden;
+}
+
+/********** Headings *********/
+h1 {
+  font-size: 2.9rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.7rem;
+  margin: 3rem 0 1rem 8.5rem;
+}
+
+.home-section h3 {
+  margin-top: 1rem;
+}
+
+h1,
+h3,
+h4 {
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.9rem;
+}
+
+/********* Header ********/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url(../public/images/cover-pic-1.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+/********** Navbar **********/
+.main-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: var(--primary-color); */
+  background-color: #f8eee5;
+  height: 5rem;
+  padding: 0 3.5rem;
+  /*********Mobile Menue - qeuries CSS - Below 560px *********/
+  position: relative;
+}
+
+/*********** Navigation's Link *******/
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.4rem;
+}
+/*********** Fixing safari Flexbox gap *******/
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 3.4rem;
+}
+/**********************************************/
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--primary-text-color);
+  /* color: #49443f; */
+  font-size: 1.1rem;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #b870db;
+}
+
+/********** Mobile Navigation **********/
+.btn-mobile-navigation {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  width: 2.6rem;
+  height: 2.6rem;
+  font-size: 2.6rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close"] {
+  display: none;
+}
+
+/********** Logo ***********/
+.logo {
+  display: flex;
+}
+
+.logo-shape {
+  background-color: var(--primary-text-color);
+  color: var(--primary-color);
+  font-size: 0.7rem;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  display: flex;
+  margin-right: -0.4rem;
+  border: 1px solid var(--primary-color);
+}
+
+.logo-shape:last-child {
+  margin: 0;
+}
+
+.logo-text {
+  align-self: center;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+/********** Sticky Navigation *******/
+
+.sticky {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: #f8eee5;
+  z-index: 9999;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 0 1.2rem 3.2rem rgba(98, 91, 84, 0.3);
+}
+
+.clearfix::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/**********  Home Section **********/
+
+.intro-section {
+  display: flex;
+  gap: 2.1rem;
+  color: var(--primary-color);
+  width: 65%;
+  position: absolute;
+  left: 30%;
+  top: 75%;
+  transform: translate(-30%, -75%);
+}
+
+/*********** Fixing safari Flexbox gap *******/
+.no-flexbox-gap .intro-section div:not(:last-child) {
+  margin-right: 2.1rem;
+}
+/*********************************************/
+
+.myInfo-img {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+}
+
+.home-section {
+  padding: 0 0.5rem 0 0;
+}
+
+.home-section p {
+  margin: 1rem 0 2.5rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 0.9rem 1.5rem;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #fee3d6;
+  color: #b870db;
+}
+
+/*********** About Section **********/
+.about-section {
+  background-color: var(--primary-color);
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  width: 85%;
+  padding-top: 4rem;
+}
+
+.about-section h2 {
+  margin: 0.5rem 0 0.1rem;
+  font-size: 2.8rem;
+}
+
+.about-description {
+  padding: 1rem 1.5rem;
+}
+
+.about-titles {
+  display: flex;
+  gap: 7rem;
+  margin: 0.1rem 1.5rem;
+  padding: 0.5rem 1.5rem 0.6rem;
+}
+
+/*********** Fixing safari Flexbox gap *******/
+.no-flexbox-gap .about-titles p:not(:last-child) {
+  margin-right: 7rem;
+}
+/*********************************************/
+
+.about-title-link {
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.about-title-link::before {
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  background-color: #b870db;
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  transition: 0.3s;
+}
+
+.about-title-link.active-title::before {
+  width: 65%;
+}
+
+.about-content {
+  display: none;
+  font-size: 1.1rem;
+  padding: 0 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-content ul li {
+  list-style: none;
+  margin: 0.8rem 0;
+}
+
+.about-content ul li span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4d1966;
+}
+
+.active-content {
+  display: block;
+}
+
+/*********** Project Section **********/
+.project-section {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  background-color: #d5c8b3;
+  font-size: 1rem;
+}
+
+.project-heading h2 {
+  margin: 0.5rem 0 1.5rem;
+  padding: 1.5rem 0 0 6.5rem;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: 22rem 22rem 22rem;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-rows: 24rem 24rem;
+  padding: 1rem 0;
+  justify-content: center;
+  border-radius: 15px;
+  row-gap: 0.8rem;
+  justify-items: center;
+}
+
+.card {
+  width: 18rem;
+  height: 22rem;
+  margin-top: 1rem;
+  background-color: var(--primary-color);
+  border-radius: 12px;
+}
+
+.card-image {
+  position: relative;
+  width: 16rem;
+  height: 12rem;
+  object-fit: cover;
+  margin-top: 0.7rem;
+  padding: 0.5rem;
+}
+
+.card-image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.card-content {
+  margin-top: 0.8rem;
+}
+
+.btn-link:link,
+.btn-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.3rem 1.2rem;
+  background-color: var(--primary-text-color);
+  color: #f8eee5;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+  transition: all 0.5s;
+}
+
+.btn-link:hover,
+.btn-link:active {
+  background-color: #b870db;
+}
+
+/********* Project Section- Card hover effect *******/
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  box-shadow: -8px 3px 10px #6b645a;
+}
+
+.overlay {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+}
+
+.card-image:hover img {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.card-image:hover .overlay {
+  opacity: 1;
+}
+
+/************* Contact Section *************/
+.contact-section {
+  width: 100%;
+  padding: 13rem 0;
+  background-color: #403c36;
+}
+
+.contact h2 {
+  margin: 0.5rem 0 1rem;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  background-color: #d5c8b3;
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0.7rem;
+  gap: 1.2rem;
+  border-radius: 10px;
+}
+
+.contact-Info {
+  flex-basis: 30%;
+  padding-left: 1.5rem;
+}
+
+/******* Contact icon's sizes ******/
+.social-icons p i {
+  font-size: 1.6rem;
+}
+
+.social-icons a i {
+  font-size: 1.7rem;
+}
+.social-icons p:nth-child(2) i {
+  font-size: 1.3rem;
+}
+
+/***********************************/
+
+/******** Space after icons ********/
+.social-icons p:first-child i {
+  margin-right: 0.3rem;
+}
+.social-icons p:nth-child(2) i,
+.social-icons p:nth-child(3) i {
+  margin-right: 0.2rem;
+}
+
+/******** Space-bottom on icons *******/
+.social-icons p:first-child {
+  margin-bottom: 0.6rem;
+}
+
+.social-icons p:nth-child(2) {
+  margin-bottom: 0.8rem;
+}
+
+.social-icons a:link,
+.social-icons a:visited {
+  display: inline-block;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.social-icons a i:hover,
+.social-icons a i:active {
+  color: #b870db;
+}
+
+.social-icons p:nth-child(2) a:link,
+.social-icons p:nth-child(2) a:visited {
+  text-decoration: none;
+  /* font-size: 1.2rem; */
+}
+
+.social-icons a span:hover {
+  color: #333;
+}
+
+/******* Contact form ******/
+.contact-form {
+  flex-basis: 65%;
+}
+
+.contact-form p {
+  font-weight: bold;
+}
+
+.contact-form form {
+  width: 100%;
+}
+
+form input,
+textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color: var(--primary-color);
+  margin: 0.8rem 0;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+
+.btn-submit {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  background-color: var(--primary-text-color);
+  color: #f8eee5;
+  border: none;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #b870db;
+}
+
+/***** submission message *****/
+#msg {
+  /* margin-top: 0.7rem; */
+  margin: 0.7rem 0 0 0.5rem;
+  color: var(--primary-text-color);
+  display: block;
+}
+
+/********** Footer *************/
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 3fr 1fr;
+  padding: 2rem 2.2rem 1.8rem;
+  font-size: 1rem;
+}
+
+.footer-name p,
+.footer-services p:first-child,
+.addrss {
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.footer-services {
+  justify-self: start;
+}
+
+.footer-services i {
+  font-size: 1.1rem;
+  margin-right: 0.3rem;
+}
+
+.footer-name {
+  justify-self: center;
+}
+
+.footer-location {
+  justify-self: end;
+  padding-right: 1rem;
+}
+
+.footer-location p i {
+  margin-right: 0.3rem;
+}
+.footer-location p i:last-child {
+  margin-right: 0.4rem;
+}
+
+address p a {
+  text-decoration: none;
+}
+
+.footer-copyright {
+  grid-column: 1/4;
+  justify-self: center;
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+
+/******* Footer Social Links Icons *******/
+.footer-icons-links {
+  list-style: none;
+  display: flex;
+  gap: 0.4rem;
+  font-size: 1.4rem;
+  margin-left: 25%;
+}
+
+/*********** Fixing safari Flexbox gap *******/
+.no-flexbox-gap .footer-icons-links li:not(:last-child) {
+  margin-right: 0.4rem;
+}
+/*********************************************/
+
+.footer-icons-links a:link,
+.footer-icons-links a:visited {
+  color: #333;
+  transition: all 0.3s;
+}
+
+.footer-icons-links a:hover,
+.footer-icons-links a:active {
+  color: #b870db;
+}
+
+address p a:link,
+address p a:visited {
+  color: #333;
+  transition: all 0.3s;
+}
+
+address p i {
+  font-size: 1.1rem;
+}
+
+address p a i:hover,
+address p a i:active {
+  color: #b870db;
+}

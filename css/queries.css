@@ -1,0 +1,434 @@
+/*** Below 1248px - Smaller desktops and Landscape Tablets  ***********/
+@media (max-width: 78em) {
+  html {
+    font-size: 85%;
+  }
+  /****** Navigation's Link - Space *****/
+  .main-nav-list {
+    gap: 3rem;
+  }
+  /*** Download button ***/
+  .btn:link,
+  .btn:visited {
+    font-size: 1rem;
+    padding: 0.8rem 1.4rem;
+  }
+
+  .project-heading h2 {
+    margin: 0.5rem 0 0.5rem;
+    padding: 1.5rem 0 0 6rem;
+  }
+
+  .project-container {
+    grid-template-columns: 21rem 21rem 21rem;
+    grid-template-rows: 23rem 23rem;
+    row-gap: 0.5rem;
+  }
+
+  .card {
+    width: 17rem;
+    height: 20rem;
+  }
+
+  .card-image {
+    width: 15rem;
+    height: 11rem;
+  }
+
+  .card-image img {
+    box-shadow: -6px 3px 10px #6b645a;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+  /******* Contact icon's sizes ******/
+  .social-icons p i {
+    font-size: 1.4rem;
+  }
+
+  .social-icons a i {
+    font-size: 1.5rem;
+  }
+  .social-icons p:nth-child(2) i {
+    font-size: 1.2rem;
+  }
+  /************************************/
+  .social-icons p {
+    font-size: 85%;
+  }
+
+  .contact-Info {
+    flex-basis: 35%;
+  }
+
+  .contact-form {
+    flex-basis: 60%;
+  }
+
+  /*** Footer ***/
+  .footer-container {
+    padding: 2rem 2rem 1.8rem;
+  }
+}
+
+/********** Tablets - Below 896px ***********/
+@media (max-width: 56em) {
+  .main-nav-list {
+    gap: 2.4rem;
+  }
+
+  .intro-section {
+    width: 80%;
+  }
+
+  .main-navbar {
+    padding: 0 2rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 2.3rem;
+  }
+  .project-container {
+    grid-template-columns: 21rem 21rem;
+    grid-template-rows: 19rem 19rem;
+    row-gap: 3.8rem;
+  }
+
+  .project-heading h2 {
+    margin: 0.5rem 0 0.5rem;
+    padding: 1.5rem 0 0 5rem;
+  }
+
+  /**** Contact ****/
+  .contact-Info {
+    flex-basis: 40%;
+    padding-left: 1.1rem;
+  }
+
+  .contact-form {
+    flex-basis: 55%;
+  }
+
+  .contact-form p {
+    font-size: 1rem;
+  }
+
+  .btn-submit {
+    padding: 0.5rem 1.4rem;
+    font-size: 1rem;
+  }
+
+  /******* Contact icon's sizes ******/
+  .social-icons p i {
+    font-size: 1.2rem;
+  }
+
+  .social-icons a i {
+    font-size: 1.3rem;
+  }
+  .social-icons p:nth-child(2) i {
+    font-size: 1rem;
+  }
+
+  /***** Footer ****/
+  .footer-container {
+    padding: 2rem 1.4rem 1.8rem 1.8rem;
+    font-size: 0.9rem;
+  }
+
+  .footer-name p,
+  .footer-services p:first-child,
+  .addrss {
+    font-size: 1rem;
+  }
+
+  .footer-icons-links {
+    font-size: 1.3rem;
+  }
+
+  address p i {
+    font-size: 1rem;
+  }
+}
+
+/********** Tablet- Below 688px ***********/
+@media (max-width: 43em) {
+  html {
+    font-size: 75%;
+  }
+
+  .main-nav-list {
+    gap: 1.8rem;
+  }
+
+  .myInfo-img {
+    width: 10.5rem;
+    height: 10.5rem;
+  }
+
+  /*** Download button ***/
+  .btn:link,
+  .btn:visited {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  /****** project Section ******/
+  .project-heading h2 {
+    margin: 0.5rem 0 0.1rem;
+    padding: 1.5rem 0 0 3.7rem;
+  }
+
+  /*** Contact Section **/
+  .contact {
+    width: 85%;
+  }
+  .contact-section {
+    padding: 9rem 0;
+  }
+
+  .contact-Info {
+    padding-left: 0.5rem;
+  }
+  /*** Footer Section **/
+  .footer-container {
+    padding: 1.8rem 0.6rem 1.8rem 1rem;
+  }
+  .footer-location {
+    justify-self: end;
+  }
+
+  /******* Footer Social Links Icons *******/
+  .footer-icons-links {
+    gap: 0.3rem;
+  }
+
+  .footer-services i {
+    font-size: 1rem;
+  }
+
+  address p i {
+    font-size: 0.9rem;
+  }
+  /*** address - Space after icon *****/
+  .footer-location p i {
+    margin-right: 0;
+  }
+  .footer-location p i:last-child {
+    margin-right: 0.2rem;
+  }
+}
+/****************** Below 560px **********************/
+@media (max-width: 35em) {
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  .about-section h2,
+  .project-heading h2 {
+    font-size: 2.2rem;
+  }
+
+  .btn-mobile-navigation {
+    display: block;
+    position: absolute;
+    right: 2rem;
+  }
+  /***** Mobile Menue *****/
+
+  .intro-section {
+    width: 90%;
+    gap: 1.2rem;
+    top: 70%;
+  }
+  .main-nav-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f8eee5;
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3.8rem;
+    /* box-shadow: 0 1rem 3rem rgba(98, 91, 84, 0.3); */
+    /* display: none; */
+    /* 1- Hide main-nav-list */
+    opacity: 0;
+    /* 2- Make it unaccessible to mouse and keyboard*/
+    pointer-events: none;
+    /* 3- Hide it from screen reader*/
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 0.5s ease-out;
+  }
+
+  .nav-open .main-nav-list {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menue"] {
+    display: none;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .myInfo-img {
+    width: 9.5rem;
+    height: 9.5rem;
+  }
+
+  /**** About Section *****/
+
+  .about-section {
+    padding-top: 3rem;
+  }
+
+  .about-titles {
+    gap: 4.6rem;
+    margin: 0.1rem 0.1rem;
+  }
+
+  /*** Project ****/
+
+  .project-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 2.6rem;
+  }
+
+  .card {
+    width: 19rem;
+    height: 24rem;
+  }
+
+  .card-image {
+    width: 17rem;
+    height: 14rem;
+  }
+
+  .card-image-content,
+  .card-content {
+    gap: 0.4rem;
+  }
+
+  .btn-link:link,
+  .btn-link:visited {
+    padding: 0.4rem 1.8rem;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+  }
+
+  /***** Contact Section *****/
+
+  .contact-section {
+    padding: 8rem 0;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2.6rem;
+    padding: 2.8rem 0.7rem;
+  }
+  /**** Contact Form ****/
+
+  form input,
+  textarea {
+    margin: 0.6rem 0;
+  }
+
+  /**** Footer *****/
+  .footer-container {
+    padding: 1.8rem 0.2rem 1rem 0.8rem;
+  }
+  .footer-copyright {
+    margin-top: 0.6rem;
+  }
+}
+
+/****************** Below 528px **********************/
+@media (max-width: 33em) {
+  .main-navbar {
+    padding: 0 1.5rem;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    row-gap: 0;
+    column-gap: 0;
+    padding: 2rem 0.8rem 1.8rem 1.4rem;
+  }
+
+  .footer-name {
+    grid-row: 2/3;
+    justify-self: end;
+    align-self: end;
+    margin-right: -1rem;
+  }
+
+  .footer-name p {
+    margin-bottom: 0.2rem;
+  }
+
+  .footer-services {
+    margin-left: 0;
+    grid-column: 1/2;
+  }
+
+  .footer-location {
+    margin-right: 0;
+    grid-column: 2/3;
+  }
+
+  .footer-copyright {
+    grid-column: 1/3;
+    margin-left: 0;
+  }
+}
+
+/****************** Below 368px **********************/
+@media (max-width: 23em) {
+  html {
+    font-size: 70%;
+  }
+  .footer-container {
+    padding: 1.8rem 0.2rem 1.8rem 0.7rem;
+  }
+  .footer-services i {
+    font-size: 0.9rem;
+  }
+  .footer-icons-links {
+    font-size: 1.1rem;
+  }
+
+  address p i {
+    font-size: 0.8rem;
+  }
+}
